@@ -39,6 +39,50 @@ Welcome to the Calculator Plus repository! This README provides an overview of t
    - Bug fix for division by zero error
 
 
+
+
+## Git LFS (Q2)
+
+### 1. Install Git LFS
+- **On macOS**: `brew install git-lfs`
+
+### 2. Initialize Git LFS
+```bash
+cd git_assignment_HeroVired
+git lfs install
+```
+
+### 3. Track Large Files with Git LFS
+```bash
+git lfs track "*.bin"
+```
+
+### 4. Add .gitattributes to the Repository
+```bash
+git add .gitattributes
+git commit -m "Configure Git LFS tracking"
+```
+
+### 5. Add and Commit Large Binary Files
+```bash
+git add path/to/large-file.bin
+git commit -m "Add large binary file"
+```
+
+### 6. Push to the Remote Repository
+```bash
+git push origin main
+```
+
+### 7. Clone the Repository on Another Machine
+```bash
+git clone git clone https://github.com/LeftAttention/git_assignment_HeroVired.git
+```
+
+### 8. Check Git LFS Files
+```bash
+git lfs ls-files
+```
 ---
 
 **Note**: This README is subject to updates and changes as the project evolves. Stay tuned for the latest developments! 🚀🧮
