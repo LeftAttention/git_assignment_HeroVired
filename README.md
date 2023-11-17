@@ -76,13 +76,117 @@ git push origin main
 
 ### 7. Clone the Repository on Another Machine
 ```bash
-git clone git clone https://github.com/LeftAttention/git_assignment_HeroVired.git
+git clone https://github.com/LeftAttention/git_assignment_HeroVired.git
 ```
 
 ### 8. Check Git LFS Files
 ```bash
 git lfs ls-files
 ```
+
+
+## Git Stash (Q3)
+
+### Creating and Working on the Circle Area Feature
+
+1. **Creating a New Branch for Circle Area**:
+   ```bash
+   git checkout -b feature/circle-area
+   ```
+
+2. **Working on Circle Area Feature**:
+   - Implementing the feature for calculating the area of a circle in this branch.
+
+3. **Stash Changes**:
+   - If the implementation is incomplete and we need to switch tasks:
+     ```bash
+     git stash
+     ```
+   - Verify the working directory is clean:
+     ```bash
+     git status
+     ```
+
+### Creating and Working on the Rectangle Area Feature
+
+4. **Creating a New Branch for Rectangle Area**:
+   ```bash
+   git checkout -b feature/rectangle-area
+   ```
+
+5. **Working on Rectangle Area Feature**:
+   - Implementing the feature for calculating the area of a rectangle in this branch.
+
+6. **Stash Changes**:
+   - Again, if the implementation is incomplete:
+     ```bash
+     git stash
+     ```
+   - Check the working directory:
+     ```bash
+     git status
+     ```
+
+### Completing and Merging the Circle Area Feature
+
+7. **Switching Back to Circle Area Branch**:
+   ```bash
+   git checkout feature/circle-area
+   ```
+
+8. **Retrieving Stashed Changes**:
+   ```bash
+   git stash pop
+   ```
+
+9. **Complete Circle Area Implementation**:
+   - Finish the implementation and test it.
+   - Commit the changes:
+     ```bash
+     git add .
+     git commit -m "Implement circle area calculation"
+     ```
+
+10. **Push Circle Area Feature**:
+    ```bash
+    git push origin feature/circle-area
+    ```
+
+### Completing and Merging the Rectangle Area Feature
+
+11. **Switch Back to Rectangle Area Branch**:
+    ```bash
+    git checkout feature/rectangle-area
+    ```
+
+12. **Retrieve Stashed Changes**:
+    ```bash
+    git stash pop
+    ```
+
+13. **Complete Rectangle Area Implementation**:
+    - Finalize the implementation and test it.
+    - Commit the changes:
+      ```bash
+      git add .
+      git commit -m "Implement rectangle area calculation"
+      ```
+
+14. **Push Rectangle Area Feature**:
+    ```bash
+    git push origin feature/rectangle-area
+    ```
+
+### Creating Pull Requests and Merging
+
+15. **Create Pull Requests**:
+    - Create pull requests for both branches (`feature/circle-area` and `feature/rectangle-area`) to merge into the `dev` branch.
+
+16. **Review and Merge**:
+    - Requesting a review from a team member.
+    - After approval, merging the pull requests into the `dev` branch.
+    - Finally, merging the `dev` branch into the main branch after thorough testing.
+
 ---
 
 **Note**: This README is subject to updates and changes as the project evolves. Stay tuned for the latest developments! 🚀🧮
